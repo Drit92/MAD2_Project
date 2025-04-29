@@ -1,0 +1,25 @@
+SECRET_KEY = 'SECRET_KEY'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///../db_directory/flaskblog.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+SECURITY_TOKEN_AUTHENTICATION_HEADER = 'Authentication-Token'
+SECURITY_PASSWORD_SALT = 'SALT'
+SECURITY_PASSWORD_HASH = 'bcrypt'
+WTF_CSRF_ENABLED = False
+JWT_SECRET_KEY = 'JWT_SECRET_KEY'
+
+SONG_UPLOAD_FOLDER = 'static/songs/'
+
+
+
+ALLOWED_EXTENSIONS = ['mp3', 'ogg', 'wav']
+
+
+CACHE_TYPE = "RedisCache"
+CACHE_REDIS_URL = "redis://localhost:6380/0"
+CACHE_DEFAULT_TIMEOUT = 300
+DEBUG = False
+
+
+CELERY_BROKER_URL = "redis://localhost:6380/1"
+CELERY_RESULT_BACKEND = "redis://localhost:6380/2"
